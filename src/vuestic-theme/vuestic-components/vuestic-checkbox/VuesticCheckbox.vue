@@ -1,21 +1,21 @@
 <template>
-  <div class="vuestic-checkbox form-check abc-checkbox"
-       :class="additionalClasses"
-  >
-    <input class="form-check-input"
-           type="checkbox"
-           :id="id"
-           :name="name"
-           :checked="checked"
-           @change="onChange"
-           :disabled="disabled"
+    <div class="vuestic-checkbox form-check abc-checkbox"
+         :class="additionalClasses"
     >
-    <label class="form-check-label" :for="id">
+        <input class="form-check-input"
+               type="checkbox"
+               :id="id"
+               :name="name"
+               :checked="checked"
+               @change="onChange"
+               :disabled="disabled"
+        >
+        <label class="form-check-label" :for="id">
       <span class="abc-label-text">
         <slot>{{ label }}</slot>
       </span>
-    </label>
-  </div>
+        </label>
+    </div>
 </template>
 
 <script>
@@ -82,10 +82,10 @@ export default {
 </script>
 
 <style lang="scss">
-  .vuestic-checkbox {
-    input[type=checkbox]:disabled + label, input[type=radio]:disabled + label,
-    input[type=checkbox]:disabled, input[type=radio]:disabled {
-      cursor: not-allowed;
+    .vuestic-checkbox {
+        input[type=checkbox]:disabled + label, input[type=radio]:disabled + label,
+        input[type=checkbox]:disabled, input[type=radio]:disabled {
+            cursor: not-allowed;
+        }
     }
-  }
 </style>

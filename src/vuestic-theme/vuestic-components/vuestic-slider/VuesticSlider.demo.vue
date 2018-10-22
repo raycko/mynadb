@@ -1,13 +1,13 @@
 <template>
-  <div class="demo-container">
-    <div class="demo-container__item" style="width: 200px">
-      <vuestic-slider
-        :options="options"
-        v-model="iconSize"
-      />
-      {{ value }}
+    <div class="demo-container">
+        <div class="demo-container__item" style="width: 200px">
+            <vuestic-slider
+                :options="options"
+                v-model="iconSize"
+            />
+            {{ value }}
+        </div>
     </div>
-  </div>
 </template>
 
 <script>

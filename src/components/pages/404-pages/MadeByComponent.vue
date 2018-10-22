@@ -1,10 +1,10 @@
 <template>
-  <div class="made-by-component">
+    <div class="made-by-component">
     <span>
         ©2018. Made by
         <a href="https://epicmax.co">Epicmax</a>
     </span>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -14,13 +14,13 @@ export default {
 </script>
 
 <style lang="scss">
-.made-by-component {
-  padding-bottom: 20px;
-  display: flex;
-  color: white;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+    .made-by-component {
+        padding-bottom: 20px;
+        display: flex;
+        color: white;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 </style>

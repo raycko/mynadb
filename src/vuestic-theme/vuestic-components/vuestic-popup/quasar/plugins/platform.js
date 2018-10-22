@@ -8,18 +8,18 @@ export let onSSR = isSSR
 
 function getMatch (userAgent, platformMatch) {
   const match = /(edge)\/([\w.]+)/.exec(userAgent) ||
-    /(opr)[\/]([\w.]+)/.exec(userAgent) ||
-    /(vivaldi)[\/]([\w.]+)/.exec(userAgent) ||
-    /(chrome)[\/]([\w.]+)/.exec(userAgent) ||
-    /(iemobile)[\/]([\w.]+)/.exec(userAgent) ||
-    /(version)(applewebkit)[\/]([\w.]+).*(safari)[\/]([\w.]+)/.exec(userAgent) ||
-    /(webkit)[\/]([\w.]+).*(version)[\/]([\w.]+).*(safari)[\/]([\w.]+)/.exec(userAgent) ||
-    /(webkit)[\/]([\w.]+)/.exec(userAgent) ||
-    /(opera)(?:.*version|)[\/]([\w.]+)/.exec(userAgent) ||
-    /(msie) ([\w.]+)/.exec(userAgent) ||
-    userAgent.indexOf('trident') >= 0 && /(rv)(?::| )([\w.]+)/.exec(userAgent) ||
-    userAgent.indexOf('compatible') < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec(userAgent) ||
-    []
+      /(opr)[\/]([\w.]+)/.exec(userAgent) ||
+      /(vivaldi)[\/]([\w.]+)/.exec(userAgent) ||
+      /(chrome)[\/]([\w.]+)/.exec(userAgent) ||
+      /(iemobile)[\/]([\w.]+)/.exec(userAgent) ||
+      /(version)(applewebkit)[\/]([\w.]+).*(safari)[\/]([\w.]+)/.exec(userAgent) ||
+      /(webkit)[\/]([\w.]+).*(version)[\/]([\w.]+).*(safari)[\/]([\w.]+)/.exec(userAgent) ||
+      /(webkit)[\/]([\w.]+)/.exec(userAgent) ||
+      /(opera)(?:.*version|)[\/]([\w.]+)/.exec(userAgent) ||
+      /(msie) ([\w.]+)/.exec(userAgent) ||
+      userAgent.indexOf('trident') >= 0 && /(rv)(?::| )([\w.]+)/.exec(userAgent) ||
+      userAgent.indexOf('compatible') < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec(userAgent) ||
+      []
 
   return {
     browser: match[5] || match[3] || match[1] || '',
@@ -31,20 +31,20 @@ function getMatch (userAgent, platformMatch) {
 
 function getPlatformMatch (userAgent) {
   return /(ipad)/.exec(userAgent) ||
-    /(ipod)/.exec(userAgent) ||
-    /(windows phone)/.exec(userAgent) ||
-    /(iphone)/.exec(userAgent) ||
-    /(kindle)/.exec(userAgent) ||
-    /(silk)/.exec(userAgent) ||
-    /(android)/.exec(userAgent) ||
-    /(win)/.exec(userAgent) ||
-    /(mac)/.exec(userAgent) ||
-    /(linux)/.exec(userAgent) ||
-    /(cros)/.exec(userAgent) ||
-    /(playbook)/.exec(userAgent) ||
-    /(bb)/.exec(userAgent) ||
-    /(blackberry)/.exec(userAgent) ||
-    []
+      /(ipod)/.exec(userAgent) ||
+      /(windows phone)/.exec(userAgent) ||
+      /(iphone)/.exec(userAgent) ||
+      /(kindle)/.exec(userAgent) ||
+      /(silk)/.exec(userAgent) ||
+      /(android)/.exec(userAgent) ||
+      /(win)/.exec(userAgent) ||
+      /(mac)/.exec(userAgent) ||
+      /(linux)/.exec(userAgent) ||
+      /(cros)/.exec(userAgent) ||
+      /(playbook)/.exec(userAgent) ||
+      /(bb)/.exec(userAgent) ||
+      /(blackberry)/.exec(userAgent) ||
+      []
 }
 
 function getPlatform (userAgent) {
@@ -66,7 +66,7 @@ function getPlatform (userAgent) {
 
   // These are all considered mobile platforms, meaning they run a mobile browser
   if (browser.android || browser.bb || browser.blackberry || browser.ipad || browser.iphone ||
-    browser.ipod || browser.kindle || browser.playbook || browser.silk || browser['windows phone']) {
+      browser.ipod || browser.kindle || browser.playbook || browser.silk || browser['windows phone']) {
     browser.mobile = true
   }
 
@@ -157,8 +157,8 @@ function getPlatform (userAgent) {
     }
 
     fromSSR = browser.cordova === void 0 &&
-      browser.electron === void 0 &&
-      !!document.querySelector('[data-server-rendered]')
+        browser.electron === void 0 &&
+        !!document.querySelector('[data-server-rendered]')
 
     fromSSR && (onSSR = true)
   }
@@ -178,7 +178,8 @@ export function hasWebStorage () {
       webStorage = true
       return true
     }
-  } catch (e) {}
+  } catch (e) {
+  }
 
   webStorage = false
   return false

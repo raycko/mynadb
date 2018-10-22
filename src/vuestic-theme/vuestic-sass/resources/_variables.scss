@@ -3,10 +3,10 @@ $gray-light: #acb5be !default;
 $light-gray: #eeeeee;
 $lighter-gray: #dddddd;
 $charcoal: #555555;
-$darkest-gray: #333333;
+$darkest-gray: #222222;
 $almost-black: #161616;
 $hover-black: #222222;
-$vue-green: #4ae387;
+$vue-green: #F07B05;
 $vue-light-green: #dbf9e8;
 $light-green: #c8f9c5;
 $lighter-green: #e9fde8;
@@ -34,26 +34,26 @@ $dark-blue: #0045b6;
 $text-gray: #b4b4b4;
 
 $colors-map: (
-  brand-danger: $brand-danger,
-  brand-primary: $brand-primary,
-  brand-info: $brand-info,
-  brand-success: $brand-success,
-  brand-warning: $brand-warning,
-  black: black,
-  white: white,
-  lighter-gray: $lighter-gray
+    brand-danger: $brand-danger,
+    brand-primary: $brand-primary,
+    brand-info: $brand-info,
+    brand-success: $brand-success,
+    brand-warning: $brand-warning,
+    black: black,
+    white: white,
+    lighter-gray: $lighter-gray
 );
 
 $theme-colors: (
-  "primary": $brand-primary,
-  "secondary": $white,
-  "success": $light-green,
-  "info": $brand-info,
-  "warning": $brand-warning,
-  "danger": $brand-danger,
-  "light": $light-gray2,
-  "dark": $almost-black,
-  "pale": $theme-pale
+    "primary": $brand-primary,
+    "secondary": $white,
+    "success": $light-green,
+    "info": $brand-info,
+    "warning": $brand-warning,
+    "danger": $brand-danger,
+    "light": $light-gray2,
+    "dark": $almost-black,
+    "pale": $theme-pale
 );
 
 // Layout //

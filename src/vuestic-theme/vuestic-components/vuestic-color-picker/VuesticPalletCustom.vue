@@ -1,10 +1,10 @@
 <template>
-  <div class="vuestic-pallet-custom">
-    <vuestic-simple-palette-picker :palette="palette" v-model="valueProxy" class="vuestic-pallet-custom__palette"/>
-    <vuestic-color-picker-input mode="advanced" v-model="valueProxy" class="vuestic-pallet-custom__input">
-      <vuestic-color-input :selected="dotisSelected" v-model="valueProxy"/>
-    </vuestic-color-picker-input>
-  </div>
+    <div class="vuestic-pallet-custom">
+        <vuestic-simple-palette-picker :palette="palette" v-model="valueProxy" class="vuestic-pallet-custom__palette"/>
+        <vuestic-color-picker-input mode="advanced" v-model="valueProxy" class="vuestic-pallet-custom__input">
+            <vuestic-color-input :selected="dotisSelected" v-model="valueProxy"/>
+        </vuestic-color-picker-input>
+    </div>
 </template>
 
 <script>
@@ -52,15 +52,15 @@ export default {
 </script>
 
 <style lang="scss">
-.vuestic-pallet-custom {
-  display: flex;
+    .vuestic-pallet-custom {
+        display: flex;
 
-  &__palette {
-   margin-right: 20px;
-  }
+        &__palette {
+            margin-right: 20px;
+        }
 
-  &__input {
-    float: right;
-  }
-}
+        &__input {
+            float: right;
+        }
+    }
 </style>

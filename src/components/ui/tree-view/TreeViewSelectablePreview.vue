@@ -1,24 +1,24 @@
 <template>
-  <vuestic-tree-root>
-    <vuestic-tree-category label="Products">
-      <vuestic-tree-node v-for="product in products" :key="product.id">
-        <vuestic-checkbox
-          slot="checkbox"
-          v-model="product.selected"
-        />
-          {{ product.name }}
-      </vuestic-tree-node>
-    </vuestic-tree-category>
-    <vuestic-tree-category isOpen label="Electronics">
-      <vuestic-tree-node v-for="electronic in electronics" :key="electronic.id">
-        <vuestic-checkbox
-          slot="checkbox"
-          v-model="electronic.selected"
-        />
-        {{ electronic.name }}
-      </vuestic-tree-node>
-    </vuestic-tree-category>
-  </vuestic-tree-root>
+    <vuestic-tree-root>
+        <vuestic-tree-category label="Products">
+            <vuestic-tree-node v-for="product in products" :key="product.id">
+                <vuestic-checkbox
+                    slot="checkbox"
+                    v-model="product.selected"
+                />
+                {{ product.name }}
+            </vuestic-tree-node>
+        </vuestic-tree-category>
+        <vuestic-tree-category isOpen label="Electronics">
+            <vuestic-tree-node v-for="electronic in electronics" :key="electronic.id">
+                <vuestic-checkbox
+                    slot="checkbox"
+                    v-model="electronic.selected"
+                />
+                {{ electronic.name }}
+            </vuestic-tree-node>
+        </vuestic-tree-category>
+    </vuestic-tree-root>
 </template>
 
 <script>

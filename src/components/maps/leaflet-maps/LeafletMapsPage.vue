@@ -1,16 +1,16 @@
 <template>
-  <div class="leaflet-maps-page">
-    <div class="row">
-      <div class="col-md-12">
-        <vuestic-widget
-          class="leaflet-maps-page__widget"
-          headerText="Leaflet Maps"
-        >
-          <leaflet-map/>
-        </vuestic-widget>
-      </div>
+    <div class="leaflet-maps-page">
+        <div class="row">
+            <div class="col-md-12">
+                <vuestic-widget
+                    class="leaflet-maps-page__widget"
+                    headerText="Leaflet Maps"
+                >
+                    <leaflet-map/>
+                </vuestic-widget>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -25,9 +25,9 @@ export default {
 </script>
 
 <style lang="scss">
-.leaflet-maps-page {
-  &__widget {
-    height: 70vh;
-  }
-}
+    .leaflet-maps-page {
+        &__widget {
+            height: 70vh;
+        }
+    }
 </style>

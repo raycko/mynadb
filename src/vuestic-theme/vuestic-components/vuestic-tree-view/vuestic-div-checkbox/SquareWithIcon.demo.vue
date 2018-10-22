@@ -1,9 +1,9 @@
 <template>
-  <div
-    style="left: 420px; top: 180px; background-color: white; position: absolute"
-  >
-    <square-with-icon iconClass="ion ion-md-checkmark"/>
-  </div>
+    <div
+        style="left: 420px; top: 180px; background-color: white; position: absolute"
+    >
+        <square-with-icon iconClass="ion ion-md-checkmark"/>
+    </div>
 </template>
 
 <script>

@@ -1,41 +1,41 @@
 <template>
-  <div class="dropdowns-page">
-    <div class="row">
-      <div class="col-md-12">
-        <vuestic-widget :headerText="$t('dropdown.default')">
-          <div class="row btn-margin-row">
-            <div class="col-sm-6 col-lg-6 col-xl-3 mb-4 d-flex justify-content-center"
-                 v-for="(dropdown, index) in dropdowns"
-                 :key="index"
-            >
-              <button
-                type="button"
-                class="btn btn-primary dropdown-toggle theme-toggle"
-                slot="actuator"
-              >
-                {{ dropdown.text }}
-                <i class="ion-ios-arrow-down arrow-down"></i>
-                <vuestic-dropdown
-                  v-model="dropdown.value"
-                  :position="dropdown.position"
-                >
-                  <div class="q-popover__container">
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        v-for="(link, index) in links"
-                        :key="index"
-                      >{{ link }}</a>
-                      <div class="col-lg-6"></div>
-                  </div>
-                </vuestic-dropdown>
-              </button>
+    <div class="dropdowns-page">
+        <div class="row">
+            <div class="col-md-12">
+                <vuestic-widget :headerText="$t('dropdown.default')">
+                    <div class="row btn-margin-row">
+                        <div class="col-sm-6 col-lg-6 col-xl-3 mb-4 d-flex justify-content-center"
+                             v-for="(dropdown, index) in dropdowns"
+                             :key="index"
+                        >
+                            <button
+                                type="button"
+                                class="btn btn-primary dropdown-toggle theme-toggle"
+                                slot="actuator"
+                            >
+                                {{ dropdown.text }}
+                                <i class="ion-ios-arrow-down arrow-down"></i>
+                                <vuestic-dropdown
+                                    v-model="dropdown.value"
+                                    :position="dropdown.position"
+                                >
+                                    <div class="q-popover__container">
+                                        <a
+                                            class="dropdown-item"
+                                            href="#"
+                                            v-for="(link, index) in links"
+                                            :key="index"
+                                        >{{ link }}</a>
+                                        <div class="col-lg-6"></div>
+                                    </div>
+                                </vuestic-dropdown>
+                            </button>
+                        </div>
+                    </div>
+                </vuestic-widget>
             </div>
-          </div>
-        </vuestic-widget>
-      </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>

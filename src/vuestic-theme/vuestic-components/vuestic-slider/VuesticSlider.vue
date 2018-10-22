@@ -1,13 +1,13 @@
 <template>
-  <slider
-    v-bind="sliderOptions"
-    :value="value"
-    @input="change"
-    :bg-style="sliderOptions.bgStyle"
-    :slider-style="sliderOptions.sliderStyle"
-    class="vuestic-slider"
-    :reverse="reverse"
-  />
+    <slider
+        v-bind="sliderOptions"
+        :value="value"
+        @input="change"
+        :bg-style="sliderOptions.bgStyle"
+        :slider-style="sliderOptions.sliderStyle"
+        class="vuestic-slider"
+        :reverse="reverse"
+    />
 </template>
 
 <script>

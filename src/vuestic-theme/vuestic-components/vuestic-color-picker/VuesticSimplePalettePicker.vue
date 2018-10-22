@@ -1,14 +1,14 @@
 <template>
-  <div class="vuestic-simple-palette-picker">
-    <ul class="vuestic-simple-palette-picker__colors">
-      <color-dot
-        v-for="(color, index) in palette" :key="index"
-        :color="color"
-        @click.native="handlerClick(color)"
-        :selected="isSelected(color)"
-      />
-    </ul>
-  </div>
+    <div class="vuestic-simple-palette-picker">
+        <ul class="vuestic-simple-palette-picker__colors">
+            <color-dot
+                v-for="(color, index) in palette" :key="index"
+                :color="color"
+                @click.native="handlerClick(color)"
+                :selected="isSelected(color)"
+            />
+        </ul>
+    </div>
 </template>
 
 <script>
@@ -49,13 +49,13 @@ export default {
 </script>
 
 <style lang="scss">
-.vuestic-simple-palette-picker {
-  padding-top: 3px;
+    .vuestic-simple-palette-picker {
+        padding-top: 3px;
 
-  &__colors {
-    padding: 3px;
-    display: flex;
-  }
-}
+        &__colors {
+            padding: 3px;
+            display: flex;
+        }
+    }
 
 </style>

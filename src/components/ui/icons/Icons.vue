@@ -1,7 +1,7 @@
 <template>
-  <div class="ui-icons">
-    <router-view :sets="sets"></router-view>
-  </div>
+    <div class="ui-icons">
+        <router-view :sets="sets"></router-view>
+    </div>
 </template>
 
 <script>
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .ui-icons {
+    .ui-icons {
 
-  }
+    }
 </style>

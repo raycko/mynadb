@@ -1,40 +1,40 @@
 <template>
-  <div class="form-group with-icon-right dropdown select-form-group multiselect-form-group"
-       v-dropdown
-       :class="{'has-error': hasErrors()}">
-    <div class="input-group dropdown-toggle">
-      <input
-        readonly
-        :class="{'has-value': !!displayValue}"
-        v-bind:value="displayValue"
-        required/>
-      <label class="control-label">{{label}}</label><i class="bar"></i>
-      <small v-show="hasErrors()" class="help text-danger">{{ showRequiredError() }}</small>
-      <i class="ion ion-ios-arrow-down icon-right input-icon dropdown-ion"></i>
-    </div>
-    <div v-if="isClearable">
-      <i
-        class="fa fa-close icon-cross icon-right input-icon multiselect-form-group__unselect"
-        @click="unselectOptions"
-      />
-    </div>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <scrollbar ref="scrollbar">
-        <div class="dropdown-menu-content">
-          <div
-            class="dropdown-item"
-            :class="{'selected': isOptionSelected(option)}"
-            v-for="(option, index) in options"
-            :key="index"
-            @click="toggleSelection(option)"
-          >
-            <span class="ellipsis">{{optionKey ? option[optionKey] : option}}</span>
-            <i class="fa fa-check selected-icon"></i>
-          </div>
+    <div class="form-group with-icon-right dropdown select-form-group multiselect-form-group"
+         v-dropdown
+         :class="{'has-error': hasErrors()}">
+        <div class="input-group dropdown-toggle">
+            <input
+                readonly
+                :class="{'has-value': !!displayValue}"
+                v-bind:value="displayValue"
+                required/>
+            <label class="control-label">{{label}}</label><i class="bar"></i>
+            <small v-show="hasErrors()" class="help text-danger">{{ showRequiredError() }}</small>
+            <i class="ion ion-ios-arrow-down icon-right input-icon dropdown-ion"></i>
         </div>
-      </scrollbar>
+        <div v-if="isClearable">
+            <i
+                class="fa fa-close icon-cross icon-right input-icon multiselect-form-group__unselect"
+                @click="unselectOptions"
+            />
+        </div>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <scrollbar ref="scrollbar">
+                <div class="dropdown-menu-content">
+                    <div
+                        class="dropdown-item"
+                        :class="{'selected': isOptionSelected(option)}"
+                        v-for="(option, index) in options"
+                        :key="index"
+                        @click="toggleSelection(option)"
+                    >
+                        <span class="ellipsis">{{optionKey ? option[optionKey] : option}}</span>
+                        <i class="fa fa-check selected-icon"></i>
+                    </div>
+                </div>
+            </scrollbar>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -142,22 +142,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.multiselect-form-group {
-  &__unselect {
-    margin-right: 20px;
-    cursor: pointer;
-  }
+    .multiselect-form-group {
+        &__unselect {
+            margin-right: 20px;
+            cursor: pointer;
+        }
 
-  .dropdown-ion {
-    top: 12px;
-    cursor: pointer;
-  }
+        .dropdown-ion {
+            top: 12px;
+            cursor: pointer;
+        }
 
-  .dropdown-menu {
-    padding: 0;
-    .vuestic-scrollbar {
-      max-height: $dropdown-item-height * 4;
+        .dropdown-menu {
+            padding: 0;
+            .vuestic-scrollbar {
+                max-height: $dropdown-item-height * 4;
+            }
+        }
     }
-  }
-}
 </style>

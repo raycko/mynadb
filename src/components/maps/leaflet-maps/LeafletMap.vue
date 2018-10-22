@@ -1,6 +1,6 @@
 <template>
-  <div class="leaflet-map">
-  </div>
+    <div class="leaflet-map">
+    </div>
 </template>
 
 <script>
@@ -28,9 +28,9 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "~leaflet/dist/leaflet.css";
+    @import "~leaflet/dist/leaflet.css";
 
-  .leaflet-map {
-    height: 100%;
-  }
+    .leaflet-map {
+        height: 100%;
+    }
 </style>

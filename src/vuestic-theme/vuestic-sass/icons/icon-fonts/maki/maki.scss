@@ -1,268 +1,267 @@
-
 @font-face {
-  font-family: 'maki';
-  font-style: normal;
-  font-weight: normal;
-  src: url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.eot');
-  src: url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.eot?#iefix') format('eot'),
-  url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.woff') format('woff'),
-  url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.ttf') format('truetype'),
-  url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.svg#maki') format('svg');
+    font-family: 'maki';
+    font-style: normal;
+    font-weight: normal;
+    src: url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.eot');
+    src: url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.eot?#iefix') format('eot'),
+    url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.woff') format('woff'),
+    url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.ttf') format('truetype'),
+    url('vuestic-theme/vuestic-sass/icons/icon-fonts/maki/maki.svg#maki') format('svg');
 }
 
 [class*="maki-"]:before {
-  font-family: 'maki', sans-serif;
-  font-style: normal;
+    font-family: 'maki', sans-serif;
+    font-style: normal;
 }
 
 .maki-aboveground-rail:before {
-  content: '\e800'
+    content: '\e800'
 }
 
 .maki-airfield:before {
-  content: '\e801'
+    content: '\e801'
 }
 
 .maki-airport:before {
-  content: '\e802'
+    content: '\e802'
 }
 
 .maki-art-gallery:before {
-  content: '\e803'
+    content: '\e803'
 }
 
 .maki-bar:before {
-  content: '\e804'
+    content: '\e804'
 }
 
 .maki-baseball:before {
-  content: '\e806'
+    content: '\e806'
 }
 
 .maki-basketball:before {
-  content: '\e807'
+    content: '\e807'
 }
 
 .maki-beer:before {
-  content: '\e808'
+    content: '\e808'
 }
 
 .maki-belowground-rail:before {
-  content: '\e809'
+    content: '\e809'
 }
 
 .maki-bicycle:before {
-  content: '\e80a'
+    content: '\e80a'
 }
 
 .maki-bus:before {
-  content: '\e80b'
+    content: '\e80b'
 }
 
 .maki-cafe:before {
-  content: '\e80c'
+    content: '\e80c'
 }
 
 .maki-campsite:before {
-  content: '\e80d'
+    content: '\e80d'
 }
 
 .maki-cemetery:before {
-  content: '\e80e'
+    content: '\e80e'
 }
 
 .maki-cinema:before {
-  content: '\e80f'
+    content: '\e80f'
 }
 
 .maki-college:before {
-  content: '\e810'
+    content: '\e810'
 }
 
 .maki-commerical-building:before {
-  content: '\e811'
+    content: '\e811'
 }
 
 .maki-credit-card:before {
-  content: '\e812'
+    content: '\e812'
 }
 
 .maki-cricket:before {
-  content: '\e813'
+    content: '\e813'
 }
 
 .maki-embassy:before {
-  content: '\e814'
+    content: '\e814'
 }
 
 .maki-fast-food:before {
-  content: '\e815'
+    content: '\e815'
 }
 
 .maki-ferry:before {
-  content: '\e816'
+    content: '\e816'
 }
 
 .maki-fire-station:before {
-  content: '\e817'
+    content: '\e817'
 }
 
 .maki-football:before {
-  content: '\e818'
+    content: '\e818'
 }
 
 .maki-fuel:before {
-  content: '\e819'
+    content: '\e819'
 }
 
 .maki-garden:before {
-  content: '\e81a'
+    content: '\e81a'
 }
 
 .maki-giraffe:before {
-  content: '\e81b'
+    content: '\e81b'
 }
 
 .maki-golf:before {
-  content: '\e81c'
+    content: '\e81c'
 }
 
 .maki-grocery-store:before {
-  content: '\e81e'
+    content: '\e81e'
 }
 
 .maki-harbor:before {
-  content: '\e81f'
+    content: '\e81f'
 }
 
 .maki-heliport:before {
-  content: '\e820'
+    content: '\e820'
 }
 
 .maki-hospital:before {
-  content: '\e821'
+    content: '\e821'
 }
 
 .maki-industrial-building:before {
-  content: '\e822'
+    content: '\e822'
 }
 
 .maki-library:before {
-  content: '\e823'
+    content: '\e823'
 }
 
 .maki-lodging:before {
-  content: '\e824'
+    content: '\e824'
 }
 
 .maki-london-underground:before {
-  content: '\e825'
+    content: '\e825'
 }
 
 .maki-minefield:before {
-  content: '\e826'
+    content: '\e826'
 }
 
 .maki-monument:before {
-  content: '\e827'
+    content: '\e827'
 }
 
 .maki-museum:before {
-  content: '\e828'
+    content: '\e828'
 }
 
 .maki-pharmacy:before {
-  content: '\e829'
+    content: '\e829'
 }
 
 .maki-pitch:before {
-  content: '\e82a'
+    content: '\e82a'
 }
 
 .maki-police:before {
-  content: '\e82b'
+    content: '\e82b'
 }
 
 .maki-post:before {
-  content: '\e82c'
+    content: '\e82c'
 }
 
 .maki-prison:before {
-  content: '\e82d'
+    content: '\e82d'
 }
 
 .maki-rail:before {
-  content: '\e82e'
+    content: '\e82e'
 }
 
 .maki-religious-christian:before {
-  content: '\e82f'
+    content: '\e82f'
 }
 
 .maki-religious-islam:before {
-  content: '\e830'
+    content: '\e830'
 }
 
 .maki-religious-jewish:before {
-  content: '\e831'
+    content: '\e831'
 }
 
 .maki-restaurant:before {
-  content: '\e832'
+    content: '\e832'
 }
 
 .maki-roadblock:before {
-  content: '\e833'
+    content: '\e833'
 }
 
 .maki-school:before {
-  content: '\e834'
+    content: '\e834'
 }
 
 .maki-shop:before {
-  content: '\e835'
+    content: '\e835'
 }
 
 .maki-skiing:before {
-  content: '\e836'
+    content: '\e836'
 }
 
 .maki-soccer:before {
-  content: '\e837'
+    content: '\e837'
 }
 
 .maki-swimming:before {
-  content: '\e838'
+    content: '\e838'
 }
 
 .maki-tennis:before {
-  content: '\e839'
+    content: '\e839'
 }
 
 .maki-theatre:before {
-  content: '\e83a'
+    content: '\e83a'
 }
 
 .maki-toilet:before {
-  content: '\e83b'
+    content: '\e83b'
 }
 
 .maki-town-hall:before {
-  content: '\e83c'
+    content: '\e83c'
 }
 
 .maki-trash:before {
-  content: '\e83d'
+    content: '\e83d'
 }
 
 .maki-tree-1:before {
-  content: '\e83e'
+    content: '\e83e'
 }
 
 .maki-tree-2:before {
-  content: '\e83f'
+    content: '\e83f'
 }
 
 .maki-warehouse:before {
-  content: '\e840'
+    content: '\e840'
 }

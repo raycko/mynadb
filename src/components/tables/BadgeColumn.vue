@@ -1,5 +1,5 @@
 <template>
-  <span class="circle" :class="classObject"></span>
+    <span class="circle" :class="classObject"></span>
 </template>
 
 <script>
@@ -33,10 +33,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .circle {
-    width: .75rem;
-    height: .75rem;
-    border-radius: 50%;
-    display: inline-block;
-  }
+    .circle {
+        width: .75rem;
+        height: .75rem;
+        border-radius: 50%;
+        display: inline-block;
+    }
 </style>

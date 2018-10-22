@@ -1,5 +1,5 @@
 <template>
-  <SliderPicker v-model="valueProxy" class="vuestic-slider-picker"/>
+    <SliderPicker v-model="valueProxy" class="vuestic-slider-picker"/>
 </template>
 
 <script>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style>
-.vuestic-slider-picker {
-  padding: 8px;
-}
+    .vuestic-slider-picker {
+        padding: 8px;
+    }
 </style>

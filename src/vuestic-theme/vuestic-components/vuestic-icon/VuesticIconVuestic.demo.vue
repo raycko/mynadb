@@ -1,9 +1,9 @@
 <template>
-  <div class="demo-container">
-    <div class="demo-container__item">
-      <vuestic-icon-vuestic/>
+    <div class="demo-container">
+        <div class="demo-container__item">
+            <vuestic-icon-vuestic/>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>

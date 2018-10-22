@@ -1,16 +1,16 @@
 <template>
-  <div class="line-maps-page">
-    <div class="row">
-      <div class="col-md-12">
-        <vuestic-widget
-          class="line-maps-page__widget"
-          headerText="Line Maps"
-        >
-          <line-map v-bind:map-data="lineMapData"/>
-        </vuestic-widget>
-      </div>
+    <div class="line-maps-page">
+        <div class="row">
+            <div class="col-md-12">
+                <vuestic-widget
+                    class="line-maps-page__widget"
+                    headerText="Line Maps"
+                >
+                    <line-map v-bind:map-data="lineMapData"/>
+                </vuestic-widget>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -31,9 +31,9 @@ export default {
 </script>
 
 <style lang="scss">
-.line-maps-page {
-  &__widget {
-    height: 70vh;
-  }
-}
+    .line-maps-page {
+        &__widget {
+            height: 70vh;
+        }
+    }
 </style>

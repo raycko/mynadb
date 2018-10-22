@@ -1,7 +1,7 @@
 <template>
-  <div class="vuestic-pre-loader">
-    <canvas ref="canvas"></canvas>
-  </div>
+    <div class="vuestic-pre-loader">
+        <canvas ref="canvas"></canvas>
+    </div>
 </template>
 
 <script>

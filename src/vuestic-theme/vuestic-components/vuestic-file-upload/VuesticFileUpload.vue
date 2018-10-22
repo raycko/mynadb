@@ -1,27 +1,27 @@
 <template>
-  <div class="vuestic-file-upload"
-       :class="{'vuestic-file-upload--dropzone': dropzone}">
-    <vuestic-file-upload-container
-        :type="type"
-        :fileTypes="fileTypes"
-        :dropzone="dropzone"
-        @upload="uploadFile"
-    >
-      <vuestic-file-upload-list
-          v-if="files.length"
-          :type="type"
-          :files="files"
-          @remove="removeFile"
-          @remove-single="removeSingleFile"
-      />
-      <vuestic-modal ref="mediumModal" :no-buttons="true">
-        <div slot="title">{{ $t('fileUpload.modalTitle') }}</div>
-        <div>
-          {{ $t('fileUpload.modalText') }}
-        </div>
-      </vuestic-modal>
-    </vuestic-file-upload-container>
-  </div>
+    <div class="vuestic-file-upload"
+         :class="{'vuestic-file-upload--dropzone': dropzone}">
+        <vuestic-file-upload-container
+            :type="type"
+            :fileTypes="fileTypes"
+            :dropzone="dropzone"
+            @upload="uploadFile"
+        >
+            <vuestic-file-upload-list
+                v-if="files.length"
+                :type="type"
+                :files="files"
+                @remove="removeFile"
+                @remove-single="removeSingleFile"
+            />
+            <vuestic-modal ref="mediumModal" :no-buttons="true">
+                <div slot="title">{{ $t('fileUpload.modalTitle') }}</div>
+                <div>
+                    {{ $t('fileUpload.modalText') }}
+                </div>
+            </vuestic-modal>
+        </vuestic-file-upload-container>
+    </div>
 </template>
 
 <script>
@@ -95,40 +95,40 @@ export default {
 </script>
 
 <style lang='scss'>
-  .vuestic-file-upload {
-    &--dropzone {
-      background-color: $lighter-green;
-      padding: 0 2rem;
-      overflow: hidden;
-    }
-  }
-
-  // Maybe we should create new component for text button
-  .btn-text {
-    border: none;
-    background: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0;
-    & + & {
-      margin-left: 1.5rem;
-    }
-    &--primary {
-      color: $vue-green;
-      &:hover {
-        opacity: 0.6;
-      }
-    }
-    &--secondary {
-      color: $white;
-    }
-  }
-
-  @media (max-width: 576px) {
     .vuestic-file-upload {
-      &--dropzone {
-        padding: 0 1rem;
-      }
+        &--dropzone {
+            background-color: $lighter-green;
+            padding: 0 2rem;
+            overflow: hidden;
+        }
     }
-  }
+
+    // Maybe we should create new component for text button
+    .btn-text {
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+        & + & {
+            margin-left: 1.5rem;
+        }
+        &--primary {
+            color: $vue-green;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        &--secondary {
+            color: $white;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .vuestic-file-upload {
+            &--dropzone {
+                padding: 0 1rem;
+            }
+        }
+    }
 </style>

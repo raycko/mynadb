@@ -1,5 +1,5 @@
 <template>
-  <component :is="iconComponent"/>
+    <component :is="iconComponent"/>
 </template>
 
 <script>
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-.vuestic-icon {
+    .vuestic-icon {
 
-}
+    }
 </style>

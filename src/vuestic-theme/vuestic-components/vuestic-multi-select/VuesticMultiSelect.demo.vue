@@ -1,20 +1,20 @@
 <template>
-  <div class="demo-container">
-    <div class="demo-container__item">
-      <vuestic-multi-select
-        label="Select country"
-        v-model="selectedCountries"
-        :options="CountriesList"
-      />
+    <div class="demo-container">
+        <div class="demo-container__item">
+            <vuestic-multi-select
+                label="Select country"
+                v-model="selectedCountries"
+                :options="CountriesList"
+            />
+        </div>
+        <div class="demo-container__item">
+            <vuestic-multi-select
+                label="Select country duplicate"
+                v-model="selectedCountries"
+                :options="CountriesList"
+            />
+        </div>
     </div>
-    <div class="demo-container__item">
-      <vuestic-multi-select
-        label="Select country duplicate"
-        v-model="selectedCountries"
-        :options="CountriesList"
-      />
-    </div>
-  </div>
 </template>
 
 <script>

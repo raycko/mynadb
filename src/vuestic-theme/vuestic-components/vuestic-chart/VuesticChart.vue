@@ -1,11 +1,11 @@
 <template>
-  <component
-    ref="chart"
-    class='vuestic-chart'
-    :is="chartComponent"
-    :options="options"
-    :chart-data="data"
-  />
+    <component
+        ref="chart"
+        class='vuestic-chart'
+        :is="chartComponent"
+        :options="options"
+        :chart-data="data"
+    />
 </template>
 
 <script>
@@ -52,21 +52,21 @@ export default {
 </script>
 
 <style lang='scss'>
-.vuestic-chart {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    .vuestic-chart {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-  > * {
-    height: 100%;
-    width: 100%;
-  }
+        > * {
+            height: 100%;
+            width: 100%;
+        }
 
-  canvas {
-    width: 100%;
-    height: auto;
-  }
-}
+        canvas {
+            width: 100%;
+            height: auto;
+        }
+    }
 </style>

@@ -55,6 +55,7 @@ export function setScrollPosition (scrollTarget, offset, duration) {
 }
 
 let size
+
 export function getScrollbarWidth () {
   if (size !== undefined) {
     return size

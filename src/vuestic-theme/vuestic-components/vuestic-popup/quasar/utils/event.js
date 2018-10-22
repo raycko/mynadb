@@ -12,7 +12,8 @@ Object.defineProperty(listenOpts, 'passive', {
       })
       window.addEventListener('qtest', null, opts)
       window.removeEventListener('qtest', null, opts)
-    } catch (e) {}
+    } catch (e) {
+    }
 
     listenOpts.passive = passive
     return passive

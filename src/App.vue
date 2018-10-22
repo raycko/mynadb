@@ -1,22 +1,22 @@
 <template>
-  <div id="app" class="app">
-    <router-view/>
-  </div>
+    <div id="app" class="app">
+        <router-view/>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+    export default {
+        name: 'app'
+    }
 </script>
 
 <style lang="scss">
-  @import "sass/main";
+    @import "sass/main";
 
-  body {
-    height: 100%;
-    #app {
-      height: 100%;
+    body {
+        height: 100%;
+        #app {
+            height: 100%;
+        }
     }
-  }
 </style>

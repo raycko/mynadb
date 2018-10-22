@@ -1,5 +1,5 @@
 <template>
-  <div class="vuestic-color-square" :style="{'background-color': value}"></div>
+    <div class="vuestic-color-square" :style="{'background-color': value}"></div>
 </template>
 
 <script>
@@ -14,8 +14,8 @@ export default {
 </script>
 
 <style lang='scss'>
-  .vuestic-color-square {
-    height: 48px;
-    width: 48px;
-  }
+    .vuestic-color-square {
+        height: 48px;
+        width: 48px;
+    }
 </style>
